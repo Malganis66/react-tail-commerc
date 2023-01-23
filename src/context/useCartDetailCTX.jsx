@@ -25,7 +25,7 @@ export default (props) => {
   };
 
   const notificationCartProduct = CartProducts.reduce(
-    (prev, current) => current.quantity + prev, 0
+    (max, current) => current.quantity + max, 0
   );
 
   return (
